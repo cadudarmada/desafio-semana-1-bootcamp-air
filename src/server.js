@@ -23,6 +23,10 @@ app.post('/payments', (req, res) => {
     res.status(201).json(payment);
 });
 
+app.get('/payments', (req, res) => {
+    res.status(200).json(payments);
+});
+
 app.listen(3000, () => {
     console.log('API rodando em http://localhost:3000');
 });
